@@ -21,5 +21,8 @@ public class Persona {
     }
     public void habla(){
         System.out.println(this.nombre + " esta hablando...");
+    }    
+    public void habla(String algo){
+        System.out.println(this.nombre + " esta hablando: '" + algo + "'");
     }
 }

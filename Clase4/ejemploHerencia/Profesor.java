@@ -15,4 +15,9 @@ public class Profesor extends Persona{
     public void ensena(){
         System.out.println(this.nombre + " esta ensenando...");
     }
+
+    @Override
+    public void habla(){
+        System.out.println(this.nombre + " esta hablando sobre las notas...");
+    }
 }

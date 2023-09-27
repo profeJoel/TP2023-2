@@ -15,4 +15,9 @@ public class Estudiante extends Persona{
     public void estudia(){
         System.out.println(this.nombre + " esta estudiando...");
     }
+
+    @Override
+    public void habla(){
+        System.out.println(this.nombre + " esta hablando sobre la materia...");
+    }
 }

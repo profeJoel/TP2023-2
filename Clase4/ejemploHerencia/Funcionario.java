@@ -15,5 +15,10 @@ public class Funcionario extends Persona{
     public void trabaja(){
         System.out.println(this.nombre + " esta trabajando...");
     }
+
+    @Override
+    public void habla(){
+        System.out.println(this.nombre + " esta pelando al jefe...");
+    }
 }
 

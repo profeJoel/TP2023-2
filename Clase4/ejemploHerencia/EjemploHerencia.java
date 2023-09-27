@@ -16,6 +16,23 @@ public class EjemploHerencia {
         e1.camina();
         p1.camina();
         f1.camina();
+
+        // Podemos generalizar el comportamiento
+
+        Persona[] listaPersonas = new Persona[4]; // declaracion de una lista (arreglo estatico)
+        listaPersonas[0] = new Persona("0000-1", "Rodrigo", "Mora", "09/09/2003");
+        listaPersonas[1] = e1;
+        listaPersonas[2] = p1;
+        listaPersonas[3] = f1;
+
+        for(Persona p : listaPersonas)
+            System.out.println("Persona: " + p.nombre);
+
+        e1.habla("ola k ace..");
+        
+        e1.habla();
+        f1.habla();
+        p1.habla();
     }
     
 }
