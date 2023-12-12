@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div>
+        <h1>Formulario</h1>
+        <form action="">
+            <label>Ingrese nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre. Ej: Juan"><br>
+            
+            <label>Género:</label><br>
+            <input type="radio" id="mujer" name="genero">Mujer<br>
+            <input type="radio" id="hombre" name="genero">Hombre<br>
+            <input type="radio" id="el/ella/elle" name="genero">Él/Ella/Elle<br>
+            <input type="radio" id="no_especificar" name="genero" checked>No Especificar<br>
+            <!--input type="radio" id="otro" name="genero1">Otro<br-->
+
+            <label>Preferencias:</label><br>
+            <input type="checkbox" id="musica" name="musica" checked><label>Música</label><br>
+            <input type="checkbox" id="arte" name="arte"><label>Arte</label><br>
+            <input type="checkbox" id="danza" name="danza"><label>Danza</label><br>
+
+            <label>Carrera:</label><br>
+            <select name="carrera" id="carrera">
+                <option value="ici" selected>Ingeniería Civil Industrial</option>
+                <option value="derecho">Derecho</option>
+                <option value="tm">Tecnología Médica</option>
+            </select>
+
+            <br>
+            <label> Seleccione el color:</label>
+            <input type="color"><br>
+
+            <label>Ingrese su fecha de nacimiento:</label><br>
+            <input type="date" name="fnacimiento" id="fnacimiento" value="01/01/2000"><br>
+            <input type="datetime-local" name="fnacimiento" id="fnacimiento"><br>
+            <input type="month" name="mes" id="mes"><br>
+            <input type="week" name="semana" id="semana"><br>
+
+            <label>Ingrese email:</label><br>
+            <input type="email" name="email" id="email" placeholder="ingrese email. ej: mail@mail.cl"><br>
+
+            <label>Suba foto de perfil:</label><br>
+            <input type="image" id="foto" src="../Clase10/Twemoji_1f600.svg.png" alt="foto" width="100px"><br>
+            <input type="file" name="archivo" id="archivo"><br>
+
+            <label>Elemento oculto</label>
+            <input type="hidden" name="oculto"><br>
+
+            <label>Ingrese su edad:</label><br>
+            <input type="number" name="edad" id="edad" min=0 max=5><br>
+
+            <label>Ingrese contraseña:</label><br>
+            <input type="password" name="contra" id="contra"><br>
+
+            <label for="">Ingrese un rango:</label>
+            <input type="range" name="rango" id="rango" min=0 max=10 value=0 step=2><br>
+
+            <input type="range" name="rango1" id="rango1" list="marcas"><br>
+            <datalist id="marcas">
+                <option value="0">0</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+                <option value="100">100</option>
+            </datalist>
+
+            <input type="submit" value="OK">
+            <input type="button" value="OKOK">
+
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
